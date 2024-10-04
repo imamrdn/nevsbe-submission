@@ -51,3 +51,53 @@ This project consists of three main components:
    ./palindrome
    ./cat_kitty
    ```
+
+# How to run NodeJs Programs
+
+1. Clone this repository or download the source files.
+2. Navigate to the project directory in the terminal.
+3. Install the dependencies with the following command:
+
+```bash
+npm install
+```
+
+4. Create a .env file in the root of the project and add your database configuration like this:
+
+```bash
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+DB_NAME=your_database
+DB_HOST=127.0.0.1
+DB_DIALECT=postgres
+```
+
+5. Run migrations to create the tables in the database:
+
+```bash
+npx sequelize-cli db:migrate
+```
+
+6. Run the seeders to populate the initial data:
+
+```bash
+npx sequelize-cli db:seed:all
+```
+
+## Product and Category Endpoints
+
+### Category
+
+- Create Category (POST): http://localhost:5000/api/categories
+- Get All Categories (GET): http://localhost:5000/api/categories
+- Get Category by ID (GET): http://localhost:5000/api/categories/:id
+- Update Category (PATCH): http://localhost:5000/api/categories/:id
+- Delete Category (DELETE): http://localhost:5000/api/categories/:id
+
+### Product
+
+- Create Product (POST): http://localhost:5000/api/products
+- Get All Products (GET): http://localhost:5000/api/products
+- Get Product by ID (GET): http://localhost:5000/api/products/:id
+- Update Product (PATCH): http://localhost:5000/api/products/:id
+- Delete Product (DELETE): http://localhost:5000/api/products/:id
