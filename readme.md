@@ -34,3 +34,20 @@ This project consists of three main components:
 - IDE or text editor (such as Visual Studio, Code::Blocks, or VS Code).
 - Node.js and npm for the ProductAPI.
 - PostgreSQL database for data storage.
+
+# How to run C++ Programs
+
+1. Clone this repository or download the source files.
+2. Open a terminal/command prompt and navigate to the directory where the files are saved.
+3. For the C++ programs, compile them using the following commands:
+
+   ```bash
+   g++ palindrome.cpp -o palindrome
+   g++ cat_kitty.cpp -o cat_kitty
+   ```
+
+4. Run the compiled programs:
+   ```bash
+   ./palindrome
+   ./cat_kitty
+   ```
